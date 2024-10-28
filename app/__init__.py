@@ -20,7 +20,7 @@ def create_app(config_name):
 
     ## register blueprint
     app.register_blueprint(customers_bp, url_prefix = "/customers")
-    app.register_blueprint(service_tickets_bp, url_perfix = "/servicetickets")
-    app.register_blueprint(mechanics_bp, url_perfix = "/mechanics")
+    app.register_blueprint(service_tickets_bp, url_prefix = "/servicetickets")
+    app.register_blueprint(mechanics_bp, url_prefix = "/mechanics")
 
     return app
